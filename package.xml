@@ -1,5 +1,5 @@
 <package>
- <name>rosie_mapping</name>
+ <name>rosie_map_controller</name>
   <version>0.1.0</version>
   <description>
     Local, global map + update.
@@ -15,10 +15,19 @@
   <build_depend>phidgets</build_depend>
   <build_depend>geometry_msgs</build_depend>
   <build_depend>sensor_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>message_filters</build_depend>
+  <build_depend>laser_geometry</build_depend>
+  <build_depend>pcl_ros</build_depend>
 
   <run_depend>roscpp</run_depend>
   <run_depend>std_msgs</run_depend>
   <run_depend>phidgets</run_depend>
   <run_depend>geometry_msgs</run_depend>
   <run_depend>sensor_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>message_filters</run_depend>
+  <run_depend>laser_geometry</run_depend>
+  <run_depend>pcl_ros</run_depend>
 </package>
+
