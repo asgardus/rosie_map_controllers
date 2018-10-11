@@ -48,7 +48,7 @@ void lidarCallback(const sensor_msgs::LaserScan::ConstPtr& msg){
     tf::Quaternion qtf;
     qtf.setRPY(0, 0, 0);
     transform.setRotation( qtf );
-    br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "base_line", "laser_frame"));
+    br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "base_link", "laser_frame"));
 /*	
   std::cout << "D-Values";
   std::copy(ranges.begin(), ranges.end(), std::ostream_iterator<float>(std::cout, " "));
