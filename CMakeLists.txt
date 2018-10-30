@@ -22,5 +22,3 @@ target_link_libraries(rosie_laser_publisher ${catkin_LIBRARIES})
 target_link_libraries(rosie_map_provider ${catkin_LIBRARIES})
 #add_dependencies(rosie_laser_publisher rosie_map_reader rosie_map_provider std_msgs phidgets geometry_msgs visualization_msgs sensor_msgs tf message_filters laser_geometry pcl_ros)
 add_dependencies(rosie_laser_publisher rosie_map_provider std_msgs phidgets geometry_msgs visualization_msgs sensor_msgs tf message_filters laser_geometry pcl_ros)
-
-
