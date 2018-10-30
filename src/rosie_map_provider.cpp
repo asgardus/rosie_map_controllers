@@ -130,8 +130,6 @@ void initializeMap(const visualization_msgs::MarkerArray msg){
 			int px = (int)((d*((x2-x1)/wallDist)+x1)/resolution);
 			int py = (int)((d*((y2-y1)/wallDist)+y1)/resolution);
 
-			ROS_INFO("setting cell occupancy, x: %d, y: %d, d: %f, wallDist: %f, diffX: %f, diffY: %f", px, py, d, wallDist, diffX, diffY);
-
 			for(int y = -czone; y <= czone; y++){
 				for(int x = -czone; x <= czone; x++){
 					if((px+x) >= 0 && (px+x) < width && (py+y) >= 0 && (py+y) < height){
